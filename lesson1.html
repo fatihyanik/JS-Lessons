@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 1</title>
-    <script>
-        document.write("Ilk Javascript Kodlarim: "+ document.getElementById('result').innerHTML);
-        
-</script>
+
 </head>
+
 <body>
 
-   <p id="result" class="test">Javascrip olarrak HTML'e hükmedebilirim</p>
-    <input type="button" value="Bas Bakalim" onclick="">
+    <input type="button" value="Open light" onclick="openLight();">
+    <img src="light1.jpeg" alt="Light" id="Picture">
+    <input type="button" value="Close Light" onclick="closeLight();">
+    <script>
+        function openLight() {
+            document.getElementById('Picture').src="light1.jpeg";
+        }
+        function closeLight(){
+            document.getElementById('Picture').src="light2.jpeg";
+        }
+    </script>
 </body>
+
 </html>
