@@ -18,6 +18,19 @@
             document.write(calc(7,8));
         }
         show();
+
+
+        //nested function
+        function goster(){
+            var yazi ="merhaba";
+            document.write("goster= "+yazi+"<br>");
+            function islem(a,b){
+                var sonuc=a+b;
+                document.write("islem= "+sonuc);
+            }
+            islem(30,30);
+        }
+        goster();
     </script>
 </body>
 </html>
