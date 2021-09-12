@@ -3,15 +3,15 @@
 var name = "Steve"; //Datatype String
 var id = 234567; //Datatype Number
 var alive = true; //Datatype Boolean
-var xyz; // undefined
+var fiveDs; // undefined
 
-//Overwriting Assigning new values
-alive = false;
-id = 7;
-name = "Fatih";
-xyz = null;
+fiveDs = ["Dodge", "Duck", "Dip", "Dive", "Dodge"];
+//Array (list)
+console.log(fiveDs[0] + " " +fiveDs[2]);
 
-console.log(name);
+id = 7+3;
+id = id-2;
+id = id*4;
+id = id/2;
 console.log(id);
-console.log(alive);
-console.log(xyz);
+
