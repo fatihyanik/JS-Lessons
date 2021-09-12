@@ -25,7 +25,11 @@ console.log(account_balance);
 }
 
 //visit the carnival, eat and drink
-drink_beer();
-drink_pop();
-drink_pop();
-eat_burger();
+var mealList = [drink_beer, drink_pop, eat_burger, drink_beer, eat_burger, drink_beer];
+function visitCarnival(mList){
+    for(let i=0, num=mList.length; i<num; i++){
+        //mList[i]();
+        mList[i].call();
+    }
+}
+visitCarnival(mealList);
