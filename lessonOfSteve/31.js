@@ -9,6 +9,7 @@ let greaterThan30 = numbers.every(function(num){
 console.log(greaterThan30);
 
 let greaterThan10 = numbers.every(function(num){
+    console.log(num);
     return num > 10;
 });
 console.log(greaterThan10);
