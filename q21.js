@@ -4,6 +4,7 @@ Modern Roman numerals are written by expressing each decimal digit of the number
 function romanToNumberConverter(roman){
     
     let number = 0;
+    let prevChar = "";
     for(let i=0; i<roman.length; i++){
         if(roman[i] === "I"){
             number +=1;
@@ -24,4 +25,4 @@ function romanToNumberConverter(roman){
     return number;
 };
 
-console.log(romanToNumberConverter("MDCLVI"));
+console.log(romanToNumberConverter("VI"));
